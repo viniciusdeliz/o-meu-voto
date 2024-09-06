@@ -53,7 +53,7 @@ export const Profile = (candidate: Candidate) => {
   const code = candidate.numero.toString().split('')
 
   const seoTitle = `Candidato(a) ${candidate.nomeUrna} - Eleições 2024`
-  const seoDescription = `Confira os dados do candidato(a) que está concorrendo ao cargo de ${candidate.cargo.nome.toLocaleLowerCase()} no município de ${candidate.localCandidatura.toLocaleLowerCase()} pelo partido ${
+  const seoDescription = `Confira os dados do candidato(a) que está concorrendo ao cargo de ${candidate.cargo.nome.toLocaleLowerCase()} no município de ${candidate.localCandidatura} pelo partido ${
     candidate.partido.sigla
   }`
 
