@@ -24,7 +24,7 @@
     ],
     "rules": {
         "multiline-ternary": "off",
-        "prettier/prettier": "error",
+        "prettier/prettier": "off",
         "space-before-function-paren": "off",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
