@@ -54,7 +54,7 @@ export const Profile = (candidate: Candidate) => {
 
   const seoTitle = `Candidato(a) ${candidate.nomeUrna} - Eleições 2024`
   const seoDescription = `Confira os dados do candidato(a) que está concorrendo ao cargo de ${candidate.cargo.nome.toLocaleLowerCase()} no município de ${
-    candidate.localCandidatura
+    candidate.localCandidatura.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
   } pelo partido ${candidate.partido.sigla}`
 
   return (
