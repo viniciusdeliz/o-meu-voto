@@ -55,8 +55,8 @@ export const Profile = (candidate: Candidate) => {
   const seoTitle = `Candidato(a) ${candidate.nomeUrna} - Eleições 2024`
   const seoDescription = `Confira os dados do candidato(a) que está concorrendo ao cargo de
   ${candidate.cargo.nome.toLocaleLowerCase()} no município de
-  ${capitalizeString(candidate.localCandidatura)} pelo partido
-  ${candidate.partido.sigla}`
+${capitalizeString(candidate.localCandidatura)} pelo partido
+${candidate.partido.sigla}`
 
   return (
     <div className={classNames('card', styles.profile)}>
